@@ -15,7 +15,7 @@ package com.D5Power.controller
 		
 		override protected function tellServerMove(p:Point):void
 		{
-			Main.my.nc.call('move',new Responder(back2),p.x,p.y);
+			//Main.my.nc.call('move',new Responder(back2),p.x,p.y);
 		}
 		
 		private function back2(data:*):void
