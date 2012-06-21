@@ -230,7 +230,7 @@ package
 			_stg.addChild(chatwin);
 			
 			
-			Main.my.nc.call('getPlayers',new Responder(showList));
+			//Main.my.nc.call('getPlayers',new Responder(showList));
 		}
 		
 		private function showList(args:*):void
@@ -240,7 +240,7 @@ package
 				if(obj.uid==Global.userdata.uid) continue;
 				(_scene as MyScene).updateNpc(obj.nickname,obj.uid,obj.x,obj.y);
 			}
-			Main.my.nc.call("ready",null);
+			//Main.my.nc.call("ready",null);
 		}
 		
 		/**

@@ -21,7 +21,7 @@ package com.D5Power.scene
 	{		
 		public function MyScene(stg:Stage, container:DisplayObjectContainer)
 		{
-			Main.my.nc.client = this;
+			//Main.my.nc.client = this;
 			super(stg, container);
 		}
 		

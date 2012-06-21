@@ -97,7 +97,7 @@ package com.D5Power.ui
 			var s:String = uname.text;
 			if(s.length>50) s=s.substr(0,50);
 			showchat("我说："+s);
-			Main.my.nc.call('chat',null,0,s);
+			//Main.my.nc.call('chat',null,0,s);
 			uname.text='';
 			
 			var say:ChatPao = new ChatPao(Wulin.my.scene,Wulin.my.scene.Player,s);
