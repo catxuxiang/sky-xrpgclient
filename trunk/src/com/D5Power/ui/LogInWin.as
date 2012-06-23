@@ -111,7 +111,6 @@ package com.D5Power.ui
 				return;
 			}
 			
-			WulinGlobal.username = uname.text;
 			Main.my.nc.send(WulinGlobal.GetReturnJsonString("LogIn", uname.text, upassword.text), onLogIn);
 		}
 		private function onLogIn(e:DataReceiveEvent):void
@@ -122,6 +121,7 @@ package com.D5Power.ui
 			}
 			else
 			{
+				WulinGlobal.username = e.Data["Arg1"];
 				Global.userdata.uid = e.Data["Arg0"];
 				this.close();
 				Main.my.start();
