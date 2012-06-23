@@ -110,8 +110,6 @@ package com.D5Power.ui
 				tf1.text = "Account password is empty!";
 				return;
 			}
-			
-			WulinGlobal.username = uname.text;
 			Main.my.nc.send(WulinGlobal.GetReturnJsonString("Register", uname.text, upassword.text), onRegister);
 		}
 		private function onRegister(e:DataReceiveEvent):void
